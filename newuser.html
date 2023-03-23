@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New User Forms</title>
+	</head>
+	<body>
+        <h1>New User Form</h1>
+		<form>
+			<label for="first-name">First Name </label>
+            <input type = "text" id ="first-name" name="first-name" required minlength="1" maxlength="32">
+			<br/>
+
+            <label for="last-name">Last Name </label>
+            <input type = "text" id ="last-name" name="last-name" required minlength="1" maxlength="32">
+			<br/>
+
+            <label for="password">Password </label>
+            <input type = "password" id ="password" name="password" required>
+			<br/>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="phone">Phone Number</label>
+			<input type="tel" id="phone" name="phone" placeholder="123-867-5309" 
+				pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+			<br/>
+
+            <a href="https://johndelvaux.github.io/" target="_blank">Homepage</a><br>
+
+            
+			<label for="birthday">Birth Month</label>
+			<input type="month" id="Birth Month" name="birthday">
+            <br>
+
+            <label for="email-checkbox">Can we email you?</label>
+            <input type="checkbox" id="email-checkbox" name="email-checkbox">
+            <br>
+
+            <label for="text-radio-yes">Can we text you?</label>
+            <input type="radio" id="text-radio-yes" name="text-radio" value="yes">
+            <label for="text-radio-yes">Yes</label>
+            <input type="radio" id="text-radio-no" name="text-radio" value="no">
+            <label for="text-radio-no">No</label>
+            <br>
+        <fieldset>
+            <label for="product-radio">Do you like our product?</label>
+            <br>
+            <input type="radio" id="product-radio-1" name="product-radio" value="1">
+            <label for="product-radio-1">1 - don't like it </label>
+            <br>
+            <input type="radio" id="product-radio-2" name="product-radio" value="2">
+            <label for="product-radio-2">2</label>
+            <br>
+            <input type="radio" id="product-radio-3" name="product-radio" value="3">
+            <label for="product-radio-3">3</label>
+            <br>
+            <input type="radio" id="product-radio-4" name="product-radio" value="4">
+            <label for="product-radio-4">4</label>
+            <br>
+            <input type="radio" id="product-radio-5" name="product-radio" value="5">
+            <label for="product-radio-5">5 - Love it</label>
+            <br>
+        </fieldset>
+            <button type="reset">Clear</button>
+            <button type="submit">Submit</button>
+
+	
+
+
+
+		</form>
+	</body>
+</html>
+
+<!--
+    http://127.0.0.1:5500/newuser.html?first-name=john&last-name=w&password=asdfdsaf&email=jdlafjsdkfls%40gmail.com&phone=432-432-4321&homepage=http%3A%2F%2Fmommies4rent.com&birthday=2023-02&email-checkbox=on&text-radio=no&product-radio=4
+-->
